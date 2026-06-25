@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Tiny Flame: Clicker Game",
+    "slug": "tiny-flame-clicker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "tinyflame",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tinyflame.clicker"
+    },
+    "android": {
+      "package": "com.tinyflame.clicker",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1D35",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png"
+      },
+      "permissions": ["INTERNET"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0B1D35"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "tiny-flame-clicker-local"
+      }
+    }
+  }
+}

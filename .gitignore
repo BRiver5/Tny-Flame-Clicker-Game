@@ -1,0 +1,33 @@
+# Release artifacts
+release/
+!release/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+backend/data/*.db
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+*.jks
+*.keystore
+
+# Native builds
+mobile/android/app/build/
+mobile/android/.gradle/
+mobile/ios/build/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
